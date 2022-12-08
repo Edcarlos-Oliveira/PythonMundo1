@@ -4,12 +4,11 @@ l1 = float(input('Digite o valor do primeiro lado: '))
 l2 = float(input('Digite o valor do segundo lado: '))
 l3 = float(input('Digite o valor do terceiro lado '))
 
-t = (l1 + l2)
-
-if t > l3:
-    print('Os valores digitados FORMAM um TRIÂNGULO.')
+if l1 < l2 +l3 and l2 < l1 + l3 and l3 < l1 + l2:
+    print('Os valores digitados \033[36mFORMAM um TRIÂNGULO.\033[m')
 else:
-    print('Os valores digitados NÃO FORMAM um TRIÂNGULO.')
+    print('Os valores digitados \033[31mNÃO FORMAM um TRIÂNGULO.\033[m')
+
 
 # Pode ser escrito com a seguinte fórmula:
 # 'if l1 < l2 + l3 and l2 < l1 + l3 and l3 < l1 +l2:'
